@@ -21,6 +21,7 @@ public:
 Deep::Deep(int d) {
     data = new int;
     *data = d;
+    cout << "Constructor - int allocated in heap" << endl;
 }
 
 Deep::Deep(const Deep &source)

@@ -22,10 +22,11 @@ public:
 Shallow::Shallow(int d) {
     data = new int;
     *data = d;
+    cout << "Constructor - int allocated in heap" << endl;
 }
 
 Shallow::Shallow(const Shallow &source) 
-    : data(source.data) {
+    : data (source.data) { // default constructor called that copies the pointer
         cout << "Copy constructor  - shallow copy" << endl;
 }
 
@@ -41,11 +42,12 @@ void display_shallow(Shallow s) {
 int main() {
     
     Shallow obj1 {100};
-    display_shallow(obj1);
+
+    display_shallow(obj1); // copy constructor called on entry, then destructor on exit
     
-    Shallow obj2 {obj1};
-    obj2.set_data_value(1000);
+    Shallow obj2 {obj1}; // obj1.data now points to an undefined location
+    obj2.set_data_value(1000); // this causes data corruption
     
-    return 0;
+    return 0; // destructor causes an exception trying to free unallocated memory
 }
 
