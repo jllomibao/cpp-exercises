@@ -10,3 +10,8 @@
  * ***************************************************************/
 #include <iostream>
 #include "Movie.h"
+
+void Movie::display(void) const
+{
+    cout << name << ", " << rating << ", " << count << endl;
+}

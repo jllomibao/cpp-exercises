@@ -20,15 +20,14 @@ private:
     string name;
     string rating;
     int count;
+
 public:
     Movie(string n = "None", string r = "PG-13", int c = 0)
     : name{n}, rating{r}, count{c} {}
 
     string get_name(void) const { return name; }
-    string get_rating(void) const { return rating; }
-    int get_count(void) const { return count; }
     void increment_count(void) { count++; }
-
+    void display(void) const;
 };
 
 #endif // _MOVIE_H_
