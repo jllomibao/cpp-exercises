@@ -3,12 +3,12 @@
 ## any manual changes will be erased      
 ##
 ## Debug
-ProjectName            :=ProjectFromTemplate
+ProjectName            :=DeclareClassAndObjects
 ConfigurationName      :=Debug
 WorkspaceConfiguration :=Debug
 WorkspacePath          :=C:/Jeffrey/Training/Programming/CPP/Exercises/CodeLite
-ProjectPath            :=C:/Jeffrey/Training/Programming/CPP/Exercises/CodeLite/ProjectFromTemplate
-IntermediateDirectory  :=../build-$(WorkspaceConfiguration)/ProjectFromTemplate
+ProjectPath            :=C:/Jeffrey/Training/Programming/CPP/Exercises/CodeLite/Section13/DeclareClassAndObjects
+IntermediateDirectory  :=../../build-$(WorkspaceConfiguration)/Section13/DeclareClassAndObjects
 OutDir                 :=$(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
@@ -30,7 +30,7 @@ LibraryPathSwitch      :=-L
 PreprocessorSwitch     :=-D
 SourceSwitch           :=-c 
 OutputDirectory        :=C:/Jeffrey/Training/Programming/CPP/Exercises/CodeLite/build-$(WorkspaceConfiguration)/bin
-OutputFile             :=..\build-$(WorkspaceConfiguration)\bin\$(ProjectName).exe
+OutputFile             :=..\..\build-$(WorkspaceConfiguration)\bin\$(ProjectName).exe
 Preprocessors          :=
 ObjectSwitch           :=-o 
 ArchiveOutputSwitch    := 
@@ -96,7 +96,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp 
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Jeffrey/Training/Programming/CPP/Exercises/CodeLite/ProjectFromTemplate/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Jeffrey/Training/Programming/CPP/Exercises/CodeLite/Section13/DeclareClassAndObjects/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
 

@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ ProjectFromTemplate - Debug ]----------"
-	@cd "ProjectFromTemplate" && "$(MAKE)" -f  "ProjectFromTemplate.mk"
+	@echo "----------Building project:[ DeclareClassAndObjects - Debug ]----------"
+	@cd "Section13\DeclareClassAndObjects" && "$(MAKE)" -f  "DeclareClassAndObjects.mk"
 clean:
-	@echo "----------Cleaning project:[ ProjectFromTemplate - Debug ]----------"
-	@cd "ProjectFromTemplate" && "$(MAKE)" -f  "ProjectFromTemplate.mk" clean
+	@echo "----------Cleaning project:[ DeclareClassAndObjects - Debug ]----------"
+	@cd "Section13\DeclareClassAndObjects" && "$(MAKE)" -f  "DeclareClassAndObjects.mk" clean
