@@ -57,7 +57,7 @@ void Movies::display_all(void) const
     cout << "-------------------" << endl;
     cout << "Name, Rating, Count" << endl;
     cout << "-------------------" << endl;
-    for(const auto movie: movies)
+    for(const auto &movie: movies)
     {
         movie.display();
     }
