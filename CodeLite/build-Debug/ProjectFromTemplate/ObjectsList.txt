@@ -1,0 +1,1 @@
+../build-Debug/ProjectFromTemplate/main.cpp.o   
